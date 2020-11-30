@@ -1,0 +1,28 @@
+:toc:
+
+= Mowing Simulator
+
+A mower simulator implementation for technical interview @BlaBlaCar.
+
+== Package
+
+`*Caution: This project requires Java 15 with enabled previews*`
+
+[source,commandline]
+----
+./mvnw clean package
+----
+
+== Run
+At the *_root of the project_* launch the following command:
+[source,commandline]
+----
+java \
+--enable-preview \
+-jar ./target/mower-2020-0.0.1-jar-with-dependencies.jar MowingSimulator \
+-c ./src/test/resources/MowingSimulatorConfiguration.txt
+----
+
+== Acceptance tests
+
+Run the MowingSimulatorAcceptanceTest class within your IDE as a jUnit test.
